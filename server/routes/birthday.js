@@ -40,7 +40,7 @@ router.put('birthday/:id', async (req,res) => {
     }catch(err) {
         console.log(err.tostring());
 
-    router.delet('/birthday/:id', async (req,res) => {
+    router.delete('/birthday/:id', async (req,res) => {
         try{
             await birthday.findByIdAndDelete(req.params.id);
             res.json('birthday');
